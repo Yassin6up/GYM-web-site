@@ -1,0 +1,290 @@
+:root {
+    --mainColor--: #FF7400;
+}
+
+body {
+    font-size: 15pt;
+    min-height: 10000px;
+    font-family: 'Cormorant SC', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    max-width: 100vw;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+.navTop {
+   max-width: 100vw;
+    width:100vw;
+    height: 100px;
+    background-color: var(--mainColor--);
+    display: flex;
+    align-items: center;
+    box-shadow: 1px 1px 10px;
+    position: fixed;
+    color: white;
+    z-index: 99;
+    top: 0;
+
+}
+
+.title {
+    position: fixed;
+    right: 50px;
+}
+
+ul {
+    background-color: white;
+    height: 350px;
+    display: grid;
+    align-items: center;
+    margin-top: 200px;
+    width: 90%;
+    position: fixed;
+    top: -200px;
+}
+
+.navBar {
+
+    display: flex;
+    top: 100px;
+    position: fixed;
+    left: 0;
+ 
+    transform: translate(-100%);
+    background-color: white;
+    height: 900px;
+    width: 300px;
+    align-items: start;
+    transition: .5s all;
+
+
+}
+
+.active {
+    transform: translate(0%);
+
+}
+
+#btnNav {
+    font-size: 50px;
+    position: fixed;
+    left: 30px;
+    color: white;
+}
+
+ul li {
+    border: 2px solid var(--mainColor--);
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    display: grid;
+    align-items: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    justify-content: center;
+    transition: .3s all;
+}
+
+ul li:hover {
+    background-color: var(--mainColor--);
+    color: white;
+    font-size: 25px;
+    border-radius: 5px;
+    transform: scale(1.1);
+    margin-left: 10px;
+}
+
+.colorList {
+    width: 100%;
+
+
+    position: fixed;
+    top: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    box-shadow: 1px 1px 1px;
+}
+
+.MainPage {
+    background-color: var(--mainColor--);
+    margin-top: 100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.imgtitle {
+    width: 210px;
+    height: 210px;
+
+}
+
+
+#svg {
+    position: absolute;
+    top: 490px;
+    border:none;
+    z-index: -99;
+
+}
+
+.h1 {
+    color: white;
+    font-size: 70px;
+}
+
+.h5 {
+    color: white;
+    font-size: 30px;
+}
+
+.l7arf {
+    font-size: 35px;
+    color:white;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.Home {
+    margin-top: 200px;
+    text-align: center;
+    color: var(--mainColor--);
+    text-shadow: 1px 1px 1px black;
+}
+
+.p {
+    margin-top: 40px;
+    width: 75%;
+    text-align: center;
+}
+
+.gym {
+    color: var(--mainColor--);
+   
+}
+.divSall{
+        border: 7px solid var(--mainColor--);
+        width: 70% ;
+        margin-top: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        height: fit-content;
+        border-radius: 4px;
+}
+.Sall{
+    width: 109%;
+    
+    transition: 1s all;
+    
+    
+}
+.Sall:hover{
+    transform: scale(1.5);
+    
+}
+.center {
+    width: 100%;
+    height: 100px;
+    background-color: var(--mainColor--);
+    color: white;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+ 
+.name {
+    font-size: 1.5em;
+    overflow: hidden;
+    background: linear-gradient(90deg, var(--mainColor--), #fff, var(--mainColor--));
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+ 
+    100% {
+        background-position: 500%;
+    }
+}
+ 
+.Ptitile{
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 10px;
+    color: #2D1313;
+    text-shadow: 1px 1px 3px var(--mainColor--);
+}
+.desc{
+    width: 85%;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#goTop{
+    font-size: 80px;
+    font-weight: 600;
+    z-index: 9999;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    
+    color: var(--mainColor--);
+}
+.swiper{
+    height: 300px;
+    width:90%;
+    display: flex;
+    justify-content: flex-start ;
+    background-color: transparent;
+    margin-top: 90px;
+    align-items: center;
+ 
+    scroll-snap-type: x mandatory ;
+    border : 10px double var(--mainColor--) ;
+}
+.img{
+    width: 100%;
+    height:100%;
+    margin-right: 3px;
+    
+}
+.aboutGym{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    margin-top: 30px;
+}
